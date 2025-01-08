@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1b1a;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h2 {
+            color: #212321;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .projects img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-card {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #1d211e;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #1f211f;
+        }
+
+        /* Styling for resume */
+        .resume-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .resume-item {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            width: 48%;
+        }
+
+        .resume-item h3 {
+            color: #323632;
+        }
+
+        .btn-download {
+            background-color: #121412;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-download:hover {
+            background-color: #3a2b33;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <h1> I am Pramila khot</h1>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm pramila, a passionate web developer. I specialize in front-end development and have a strong understanding of HTML, CSS, JavaScript, and React. I'm always looking to learn new technologies and grow my skillset. Below is my resume and background.</p>
+
+        <div class="resume-section">
+            <div class="resume-item">
+                <h3>Education</h3>
+                <p>University of XYZ - Bachelor's in Computer Science (2019 - 2023)</p>
+            </div>
+            <div class="resume-item">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React, Node.js</li>
+                    <li>Git & GitHub</li>
+                    <li>Problem-solving & Debugging</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="resume.pdf" class="btn-download" download="Your_Name_Resume.pdf">Download Resume</a>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1: Personal Portfolio Website</h3>
+            <p>This is the personal portfolio website I created to showcase my skills and projects. It is built using HTML, CSS, and JavaScript.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 2: E-Commerce Website</h3>
+            <p>An e-commerce website where users can browse products, add to cart, and complete the checkout process. Built with React and Redux.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="your name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    <footer>
+        <p>&copy; 2025 Your Name | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
